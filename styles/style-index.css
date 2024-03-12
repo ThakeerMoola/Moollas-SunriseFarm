@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.topPart {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: white; */
+    background-image: url(./images/bg1.jpg);
+}
+
+.slider {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.images {
+    display: flex;
+    width: 400%; 
+    transition: transform 0.5s ease; 
+}
+
+.images img {
+    height: 450px;
+    width: 25%; 
+}
+
+.dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: grey;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color:black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-bottom: 290px;
+    color: black;
+    white-space: nowrap;
+}
+
+.ctn{
+    padding: 8px 15px;
+    background: black;
+    border-radius: 30px;
+    color: white;
+}
+
+.bottomPart{
+    width: 100%;
+    
+    background-image: url(./images/bg2.webp);
+}
+
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+}
+
+.title h2{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.services{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px;
+    /* background-color: rgb(11, 94, 11); */
+    background-image: url(/images/Cattle/bg5.jpg);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card h2{
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.button{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    letter-spacing: 1px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .title h1 {
+        font-size: 32px;
+    }
+
+    .title h2 {
+        font-size: 18px;
+    }
+
+    .services {
+        width: 95%;
+        margin: 40px auto;
+        flex-direction: column; /* Change flex direction to column */
+        align-items: flex-start; /* Align cards to the start of the column */
+        align-items: center;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+}

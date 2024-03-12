@@ -1,0 +1,28 @@
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .whatsapp-icon:hover {
+        transform: translateY(-5px);
+    }
+    .whatsapp-icon i,
+    .whatsapp-icon svg {
+        font-size: 32px; /* Increase the size */
+        color: white; /* WhatsApp green color */
+        background-color:  #25D366;
+        border-radius: 40px;
+    }
+
+      /* Responsive Styles */
+      @media only screen and (max-width: 600px) {
+        .whatsapp-icon {
+            bottom: 10px; /* Adjust the bottom position for smaller screens */
+            right: 10px; /* Adjust the right position for smaller screens */
+        }
+        .whatsapp-icon i,
+        .whatsapp-icon svg {
+            font-size: 24px; /* Decrease the size for smaller screens */
+        }
+    }

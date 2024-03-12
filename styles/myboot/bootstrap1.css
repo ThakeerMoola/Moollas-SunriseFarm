@@ -1,0 +1,71 @@
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index:100; 
+    background-color: white !important;
+    /* padding:10px;  */
+}
+.navbar-brand {
+    padding: 0; /* Remove any default padding */
+}
+.navbar-brand img{
+    max-width:100px;
+    max-height:125px;
+    object-fit:cover;
+}
+
+/* burger btn */
+.navbar-toggler {
+    background-color: grey;
+    border: none;
+    transition: 500ms ease-out;
+}
+
+/* .navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: lightgrey;
+} */
+
+/* side navbar */
+.nav-item {
+    width: fit-content;
+}
+
+/* .navbar-nav {
+    padding: 20px 10px;
+} */
+
+/* .offcanvas-body {
+    padding: 10px 0;
+} */
+
+/* ================================================== */
+
+/* added */
+/* .nav-item, nav a{
+    color:green; 
+}
+nav-link{
+    color:orange; 
+} */
+
+.navbar-nav {
+    color:black; 
+    --bs-nav-link-color:black; 
+}
+.navbar-nav a:hover,
+.navbar-nav a:focus {
+    color:black; 
+    /* --bs-nav-link-color:blue;  */
+}
+
+.dropdown-menu{
+    background-color: white;
+    color:black;
+}
+.dropdown-item:hover{
+    background-color: white;
+    color:black;
+}
+/* ================================================== */

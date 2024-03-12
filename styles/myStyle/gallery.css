@@ -1,0 +1,120 @@
+/*GALLERY SLIDESHOW*/
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    color: black;
+}
+
+
+/* Hide the images by default */
+.Slideshow {
+    display: flex;
+   
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+/* Adjust position of arrows for mobile */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.prev {
+    left: 5%; /* Adjusted position for previous button */
+}
+
+.next {
+    right: 5%; /* Adjusted position for next button */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 14px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* Adjustments for mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        overflow: hidden; /* Ensure arrows stay within container */
+    }
+
+    .Slideshow img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust position of arrows for mobile */
+    .prev,
+    .next {
+        top: 50%;
+        transform: translateY(-50%);
+        margin-top: -30px; /* Adjusted margin for better positioning */
+        position: absolute;
+    }
+    .prev {
+        left: 0; /* Align previous button to the left */
+        border-radius: 3px 0 0 3px;
+    }
+
+    .next {
+        right: 0; /* Align next button to the right */
+        border-radius: 0 3px 3px 0;
+    }
+
+}

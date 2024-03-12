@@ -1,0 +1,142 @@
+/*About Us*/
+body{
+    /* background-image: url(/images/Cattle/bg5.jpg); */
+    background-color: greenyellow;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+   
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.about-image{
+    flex: 1;
+    order: 1; 
+    margin-left: 40px; 
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.about-image img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+.about-image1{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.about-image1 img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+
+.about-image2{
+    flex: 1;
+    order: 3; 
+    margin-left: 40px; 
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-image2 img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+
+.about-image3{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.about-image3 img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+    border-radius: 20px;
+}
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        padding: 0px;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-left: 0px;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .about-image1{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        order: 2;
+    }
+    .about-image2{
+        margin-left: 0px;
+        margin-bottom: 20px;
+        order: 1;
+    }
+    .about-image3{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        order: 2;
+    }
+    .about-content p{
+        padding: 0px;
+        font-size: 16px;
+    }
+}

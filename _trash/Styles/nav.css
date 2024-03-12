@@ -1,0 +1,165 @@
+
+* {
+    
+    padding: 0;
+
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: whitesmoke;
+    color: black;
+    border-top-left-radius: 0; /* Top-left corner not rounded */
+    border-top-right-radius: 0; /* Top-right corner not rounded */
+    border-bottom-left-radius: 15px; /* Bottom-left corner rounded */
+    border-bottom-right-radius: 15px; /* Bottom-right corner rounded */
+    overflow: hidden; /* Ensure content outside the curve is hidden */
+}
+
+
+.brand {
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+
+.brand a{
+    
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+.logo img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center; /* Center the menu items horizontally */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    position: relative;
+    align-items: center;
+}
+
+.menu li a:hover {
+    color: green;
+}
+
+.menu li.active a {
+    color: green; /* Change color for active item */
+}
+
+.menu li.active::after {
+    content: ''; 
+    position: absolute;
+    bottom: -2px; 
+    left: 70%; /* Position the line at the center of the list item */
+    transform: translateX(-100%); /* Adjust horizontally to center the line */
+    width: 80%; /* Set the width to 50% of the list item */
+    height: 3px; 
+    background-color: green;
+    border-radius: 40px;
+transition: width 0.3s ease; /* Add a transition effect for width */
+}
+
+.menu li.nav-item.active:hover::after {
+    width: 100%; /* Increase the width on hover */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: transform 0.3s; 
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 94px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 1000;
+        
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 4000;
+         
+        flex-direction: column;
+        cursor: pointer;
+        padding: 10px;
+       
+    }
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0; /* Hide middle line */
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+    

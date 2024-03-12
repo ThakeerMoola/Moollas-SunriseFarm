@@ -1,0 +1,207 @@
+
+body {
+  /* padding-top: 3rem; */
+  /* padding-bottom: 3rem; */
+  /* color: rgb(var(--bs-tertiary-color-rgb)); */
+  color: white;
+   background-image: url(/images/Cattle/bg5.jpg); 
+  /* background-color:#067126; */
+  
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* -------------------------------------------------- */ 
+/* my styles */
+.carousel-item img{
+  object-fit: cover;
+}
+
+.carousel-item h1, 
+.carousel-item p{
+  color:white; 
+}
+/* ---------- */
+
+/* sections */
+.carousel-item img,
+.marketing img{
+  object-fit: cover;
+}
+
+.marketing img{
+  margin-top:20px; 
+  width:500px;
+  height:80%;
+  border-radius:30px;
+
+  /* transform:rotateZ(4deg); */
+  /* transform:rotateY(30deg); */
+
+  transition:400ms ease-in;
+}
+/* .marketing img:hover{ */
+  /* border-radius:30px; */
+  /* transform:rotateZ(0deg); */
+  /* transform:rotateY(0deg); */
+
+  /* box-shadow:10px 10px 1px white;  */
+/* } */
+
+
+
+.marketing h2{
+  color:whitesmoke;
+}
+/* .row h2:hover{
+  color:white; 
+  /* width:fit-content;  *
+}
+
+.row a{
+  text-decoration: none;
+  text-align: center;
+  padding:20px 0;
+  width:fit-content; 
+} */
+/* .row a:hover{
+  color:white; 
+} */
+
+
+/* links at top of page */
+.list-container {
+  padding:20px 10px;
+  background-color: rgb(42, 118, 7);
+  border-radius:20px;
+  /* box-shadow: 1px 1px 10px greenyellow; */
+  border:2px solid greenyellow; 
+}
+#section-list{
+  padding:0;
+}
+
+#section-list li{
+  list-style: none;
+  text-align: center;
+
+}
+#section-list a{
+  text-decoration: none;
+  font-size:30px;
+  color:white; 
+  transition:500ms ease; 
+}
+#section-list a:hover{
+  color:black; 
+}
+/* --------------------------------- */
+
+/* carousel */
+#myCarousel{
+  background-image: url("./images/bg4-dark.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.carousel-item{
+  /* background:linear-gradient(white, darkblue); */
+  /* background:linear-gradient(darkblue,white); */
+
+  /* background-image: url("./styles/images/back\ \(1\).webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-color:red; 
+  background-blend-mode: difference; */
+  border:none; 
+}
+/* --------------------------------- */
+
+/* footer */
+footer img{
+  width:40px;
+  height:40px;
+  object-fit: cover;
+
+  margin:10px;
+  transition:400ms ease-in; 
+}
+footer img:hover{
+  cursor: pointer;
+  transform: rotateZ(-15deg);
+}
+/* -------------------------------------------------- */ 

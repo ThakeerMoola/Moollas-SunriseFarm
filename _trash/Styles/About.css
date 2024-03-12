@@ -1,0 +1,23 @@
+.aboutpic {
+    margin-top: -55px; /* Adjust the margin as needed */
+    position: relative;
+    border-radius: 15px; /* Adjust the value to change the curvature */
+    overflow: hidden; /* Ensure content outside the curve is hidden */
+}
+
+.aboutpic img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.centered-heading {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+    font-size: 58px;
+}
+
